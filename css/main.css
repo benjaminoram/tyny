@@ -4,11 +4,11 @@
     --secondary-color: #717171;
 	--tertiary-color: #9b8686;
     --font-color: #222222;
-    --bg-color: #B09A9A;
-	--bg-image: url(../img/background-quartz.jpg);
+    --bg-color: #ba7225;
+	--bg-image: url(../img/);
 	--nav-bg-image: url(../img/navbar-background-quartz.png);
 	--logo-image: url(../img/logo-black.svg);
-	--page-bg-color: #cdbcbc;
+	--page-bg-color: #d4c9be;
   }
   
 [data-theme="dark"] {
