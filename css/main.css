@@ -7,7 +7,7 @@
     --bg-color: #B09A9A;
 	--bg-image: url(../img/background-quartz.jpg);
 	--nav-bg-image: url(../img/navbar-background-quartz.png);
-	--logo-image: url(../img/atlg_logo_sq-black.svg);
+	--logo-image: url(../img/logo-black.svg);
 	--page-bg-color: #cdbcbc;
   }
   
@@ -19,7 +19,7 @@
     --bg-color: #396471;
 	--bg-image: url(../img/background-blue.jpg);
 	--nav-bg-image: url(../img/navbar-background-blue.png);
-	--logo-image: url(../img/atlg_logo_sq-white.svg);
+	--logo-image: url(../img/logo-white.svg);
 	--page-bg-color: #23373d;
 	}
 
