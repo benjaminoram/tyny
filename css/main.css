@@ -1,0 +1,197 @@
+:root {
+	font-size: calc(1rem + 0.25vw);
+	--primary-color: #000000;
+    --secondary-color: #717171;
+	--tertiary-color: #9b8686;
+    --font-color: #222222;
+    --bg-color: #B09A9A;
+	--bg-image: url(../img/background-quartz.jpg);
+	--nav-bg-image: url(../img/navbar-background-quartz.png);
+	--logo-image: url(../img/atlg_logo_sq-black.svg);
+	--page-bg-color: #cdbcbc;
+  }
+  
+[data-theme="dark"] {
+	--primary-color: #ffffff;
+    --secondary-color: #5d5d5d;
+	--tertiary-color: #2a4c57;
+    --font-color: #ffffff;
+    --bg-color: #396471;
+	--bg-image: url(../img/background-blue.jpg);
+	--nav-bg-image: url(../img/navbar-background-blue.png);
+	--logo-image: url(../img/atlg_logo_sq-white.svg);
+	--page-bg-color: #23373d;
+	}
+
+  .hidden{display:none;}
+
+/* inclusive-sans-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Inclusive Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../css/inclusive-sans-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+body {
+	background-color: var(--page-bg-color);
+	text-align: left;
+	font-size: 90%;
+	font-family: Inclusive Sans, Helvetica, Arial, sans-serif;
+	line-height: 2.0em;
+	float: none;
+	clear: left;
+}
+
+#carpet{
+	background-repeat: repeat;
+	background-image: var(--bg-image);
+	background-color: var(--bg-color);
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: .75em;
+}
+
+section {
+	background-repeat: repeat;
+	background-image: var(--bg-image);
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+a {
+	border-width: 0em;
+	color: var(--font-color);
+	border-style: none;
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+	padding: 0.15em;
+	padding-left: 0.35em;
+	padding-right: 0.35em;
+}
+
+a:hover {
+	color: var(	--tertiary-color);
+	background-color:  var(--primary-color);
+}
+
+#NavigationBar {
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-image: var(--nav-bg-image);
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
+	/* Pay special attention here! */
+	position: sticky;
+	top: 0em;
+}
+
+#listofcontents {
+	font-size: 106%;
+	font-weight: normal; 
+	line-height: 2.5em;
+	text-decoration: none;
+	margin-top:2em;
+	margin-bottom:0em;
+}
+
+#listofcontents a {
+	padding: 0.15em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+a.linkbutton  {	
+	padding: 0.15em;
+	padding-top: 0.25em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-radius: 0.4em;
+	border: 2px dotted var(--font-color);;
+	text-decoration: none;
+	color: var(--font-color);
+	background-color: var(--tertiary-color);
+	white-space:nowrap;
+}
+
+a.linkbutton::after  {	
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+	margin: 0 0.15em 0 0.25em;
+}
+
+a.linkbutton:hover {	
+	background-color: var(--secondary-color);
+}
+
+hr {
+	clear: left;
+	border-top: 1px dotted  var(--primary-color);;
+	border-bottom: 0em none;
+	background-color: none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* Typoraphy */
+p, ul, ol { padding-bottom: 0.7em; padding-top: 0em; margin-left: 0; margin-bottom: 0em; margin-right: 0; margin-top: 0em;}
+
+h0, h1, h2, h3 {font-variant-caps: all-small-caps;
+	font-weight: 550; margin-block-start: 0em; margin-block-end: 0em;}
+
+h0 {font-size: 250%;}
+h1 {font-size: 155%;}
+h2 {font-size: 135%;}
+h3 {font-size: 115%}
+h4 {font-size: 106%}
+h5 {font-size: 100%}
+h6 {font-size: 96%}
+
+.Para-Inset {
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+/* Columns */
+
+.ColumnBox {
+	padding-bottom: 0em;
+	margin-left: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	column-width: 20em;
+}
+
+
+#mainlogo {
+width: calc(25%); 
+max-width: 15em;
+aspect-ratio: 1;
+background-image: var(--logo-image);
+background-size: contain;
+background-position: left bottom;
+background-repeat: no-repeat;
+}
+
+.theme-switch  {	
+	padding: 0.15em;
+	padding-top: 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.1em;
+	margin-right: 0.5em;
+	border-radius: 0.4em;
+	border: 2px dotted var(--font-color);;
+	text-decoration: none;
+	color: var(--font-color);
+}
+  
