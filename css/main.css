@@ -1,14 +1,14 @@
 :root {
 	font-size: calc(1rem + 0.25vw);
 	--primary-color: #000000;
-    --secondary-color: #717171;
-	--tertiary-color: #9b8686;
+    --secondary-color: #ba7225;
+	--tertiary-color: #ba7225;
     --font-color: #222222;
     --bg-color: #ba7225;
 	--bg-image: url(../img/);
 	--nav-bg-image: url(../img/);
 	--logo-image: url(../img/logo-black.svg);
-	--page-bg-color: #d4c9be;
+	--page-bg-color: #614f3c;
   }
   
 [data-theme="dark"] {
